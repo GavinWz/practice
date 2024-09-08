@@ -52,3 +52,6 @@ git checkout 分支名
 git push -u origin b1
 
 6. 将远程分支的修改拉取到本地分支
+应该用git pull命令
+
+
