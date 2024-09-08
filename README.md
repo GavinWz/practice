@@ -42,7 +42,7 @@ NOTE: 基于现在所在的分支上去新建分支，当前分支之前的修�
 
 3. 切换分支
 git checkout 分支名
-切换分支之前要提交当前分支的所有更改
+切换分支之前要提交当前分支的所有更改，才能切换成功
 
 4. 删除分支
 * 先切换到其他分支
@@ -52,8 +52,8 @@ git checkout 分支名
 git push -u origin b1
 
 6. 将远程分支的修改拉取到本地分支  
-git pull  
-第一次使用pull命令之前，需要设置一下合并策略：一般默认选第一个。设置完之后重新git pull  
-git config pull.rebase false  # merge (the default strategy)  
-git config pull.rebase true   # rebase  
-git config pull.ff only       # fast-forward only
+测试
+
+
+
+
