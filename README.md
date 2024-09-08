@@ -22,6 +22,8 @@ git add . # 将本地所有更改添加到暂存区（除了gitignore中指明�
 
 git commit -m "评论信息"  # 提交本地已经添加的修改，并添加评论
 
+git commit -am "评论信息"  # 将git add . 和git commit -m "评论" 合并
+
 ### 创建main仓库
 git branch -M main
 
@@ -40,9 +42,13 @@ NOTE: 基于现在所在的分支上去新建分支，当前分支之前的修�
 
 3. 切换分支
 git checkout 分支名
+切换分支之前要提交当前分支的所有更改
 
 4. 删除分支
 * 先切换到其他分支
 * git branch -d 分支名
 
 5. 将本地分支推送到远程
+git push -u origin b1
+
+6. 将远程分支的修改拉取到本地分支
