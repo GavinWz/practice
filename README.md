@@ -57,3 +57,15 @@ git pull
 git config pull.rebase false  # merge (the default strategy)  
 git config pull.rebase true   # rebase  
 git config pull.ff only       # fast-forward only
+NOTE: pull之前要提交当前分支的所有更改
+
+## 流程
+1. git add file1 file2 ....  # 添加b1分支的修改
+2. git commit -m "评论内容" # 将b1分支的修改提交到本地仓库
+3. git checkout main
+4. git pull  # 因为本地工作都是在b1分支上进行的，不会修改main分支的内容，所有pull main不会有冲突
+5. git checkout b1
+6. git merge main  # 为了提前审查是否有影响合并的冲突
+7. git push origin b1  # 将b1推送到远端
+8. 去github提交pull request
+（3-6可以不做）
